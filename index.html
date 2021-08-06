@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BMI Calculator</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+
+  <body>
+    <h1>Medical Record Form</h1>
+
+    <?php
+    echo "Hello! This is a random output from PHP. \n";
+
+    ?>
+    
+    <p>Please submit your name, height, and weight to enter our, err, lucky draw. Wow! Stand to win a pair of ArPods!</p>
+ 
+    <form action="/action_page.php" method="GET">
+
+ <div>
+    <label for="name">Name</label><br>
+  <input type="text" id="name" name="name"><br><br>
+</div>
+
+<div>
+  <label for="weight">Weight (kg)</label><br>
+  <input type="number" id="weight" step="any" name="weight"><br><br>
+</div>
+
+<div>
+   <label for="height">Height (m)</label><br>
+  <input type="number" id="height" step="any" name="height"><br><br>
+</div>
+  
+    <label for="comments">Comments</label><br>
+    <textarea name="message" rows="10" cols="30" placeholder="I find this highly suspicious...">
+I find this highly suspicious...
+</textarea> <br>
+  <input type="submit" value="$ubmit">
+
+<?php
+include ("contact.php");
+?>
+
+
+</form>
+
+
+    
+  </body>
+</html>
+© 2021 GitHub, Inc.
